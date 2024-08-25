@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --color-primary: rgb(0, 8, 45);
+    --color-secondary: rgb(175, 62, 77);
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 1);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 473px;
+    background-color: var(--color-primary);
+    color: #fff;
+    & .conteiner-primary{
+        display: flex;
+        position: absolute;
+        top: 55px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & .img-logo{
+            width: 20rem;
+        }
+        & a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    & .conteiner-header-apresentation{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: absolute;
+        gap: 1rem;
+        top: 282px;
+        .conteiner-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            & .conteiner-logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 169px;
+                height: 105px;
+                z-index: 1;
+                background-color: var(--color-primary);
+                top: calc(486px - 282px);
+                left: calc(1072px - 1016px);
+                & img{
+                    width: 120px;
+                    height: 95px;
+                }
+            }
+        }
+        & .cards{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 285px;
+            height: 244px;
+            background-color: var(--color-secondary);
+            & h2{
+                font-size: 199px;
+                font-weight: 900;
+                line-height: 240.84px;
+                color: rgba(0, 0, 0, 0.09);
+            }
+            & h3{
+                position: absolute;
+                font-size: 28px;
+                color: #fff;
+                top: calc(473px - 282px);
+                left: calc(138px - 114px);
+            }
+        }
+    }
+}
+main{
+    height: 100vh;
+}
